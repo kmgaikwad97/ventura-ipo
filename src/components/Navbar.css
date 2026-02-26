@@ -1,0 +1,11 @@
+.navbar {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #1e1b4b;
+    font-weight: 500;
+  }

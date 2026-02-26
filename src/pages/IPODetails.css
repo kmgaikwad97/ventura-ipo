@@ -1,0 +1,202 @@
+.company {
+  padding: 40px;
+}
+.company-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.company-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-logo-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+}
+.company-logo {
+  object-fit: contain;
+}
+.company-meta {
+  display: flex;
+  flex-direction: column;
+}
+.company-title,
+.company-subtitle {
+  margin: 0;
+}
+.back-comp-btn {
+  width: 40px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.back-btn {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+}
+.download-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.apply-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #1e1b4b;
+  color: white;
+  border: none;
+}
+.ipo-details-box {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.ipo-details-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 13px;
+  color: #8a8795;
+  margin: 0 0 6px 0;
+}
+
+.detail-value {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+  color: #191940;
+}
+.card-style {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.red-percent {
+  color: #ef4444;
+}
+.about {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.about p {
+  color: #837e8a;
+}
+.about-text {
+  color: #837e8a;
+  line-height: 1.6;
+}
+
+.read-toggle {
+  color: #f97316;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .ipo-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 568px) {
+  /* company details */
+  .company-details {
+    justify-content: flex-start; /* remove space-between */
+  }
+
+  /* Hide back button */
+  .back-comp-btn {
+    display: none;
+  }
+
+  /* Hide right actions */
+  .company-actions {
+    display: none;
+  }
+
+  /* Stack logo + text nicely */
+  .company-left {
+    gap: 14px;
+  }
+
+  .company-title {
+    font-size: 18px;
+  }
+
+  .company-subtitle {
+    font-size: 14px;
+  }
+
+  /* ipo details */
+  .ipo-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  /* Hide extra items */
+  .mobile-hide {
+    display: none;
+  }
+
+  /* Make Issue Dates full width */
+  .ipo-details-grid .detail-item:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .company {
+    padding: 20px;
+  }
+
+  .card-style {
+    padding: 16px;
+  }
+
+  .ipo-details-box {
+    padding: 16px;
+  }
+}

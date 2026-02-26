@@ -1,0 +1,129 @@
+.ipo-list-container {
+  padding: 40px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto; /* Responsive scroll for mobile */
+}
+
+.ipo-table {
+  border: 1px solid #eee;;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ipo-table thead {
+  background: #f3f4f6;
+  color: #76717e;
+}
+
+.ipo-table th {
+  text-align: left;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ipo-table td {
+  padding: 16px;
+  font-size: 14px;
+}
+
+.table-row {
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.table-row:hover {
+  background: #f9fafb;
+}
+
+.company-name {
+  font-weight: 600;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .ipo-list-container {
+    padding: 20px;
+  }
+
+  .ipo-table th,
+  .ipo-table td {
+    padding: 12px;
+  }
+}
+
+.company-cell {
+  display: flex;
+  align-items: center; 
+  gap: 12px;
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #f5f5f5;
+  padding: 2px;
+}
+/* Responsive code for table Starts */
+
+/* @media (max-width: 568px) {
+  .ipo-table thead {
+    display: none; 
+  }
+  
+  .ipo-table,
+  .ipo-table tbody,
+  .ipo-table tr,
+  .ipo-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .ipo-table tr {
+    background: #fff;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .ipo-table td {
+      padding: 8px 0;
+      border: none;
+    }
+
+  .ipo-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    font-size: 12px;
+    color: #76717e;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .company-cell {
+    gap: 10px;
+  }
+
+  .company-logo {
+    width: 36px;
+    height: 36px;
+  }
+} */
