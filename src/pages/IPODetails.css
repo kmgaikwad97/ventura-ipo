@@ -74,6 +74,7 @@
   background: #1e1b4b;
   color: white;
   border: none;
+  cursor: pointer;
 }
 .ipo-details-box {
   background: #fff;
