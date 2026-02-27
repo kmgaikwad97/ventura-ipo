@@ -7,14 +7,22 @@ import Timeline from "../components/Timeline";
 import "./IPODetails.css";
 import { BsFileEarmarkArrowDown } from "react-icons/bs";
 import { IoChevronBackOutline } from "react-icons/io5";
+import NotFound from "./NotFound";
 
 const IPODetails = () => {
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
   const { id } = useParams();
   const ipo = ipoData.find((item) => item.id === Number(id));
-
-  if (!ipo) return <h2>IPO Not Found</h2>;
+  if (!ipo)
+    return (
+      <NotFound
+        title="IPO Not Found"
+        message="Invalid IPO ID"
+        description="The IPO you are trying to access does not exist."
+        redirectTo="/"
+      />
+    );
 
   const wordLimit = 30;
   const words = fullText.split(" ");
